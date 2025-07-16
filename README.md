@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✍️ TiaType Pro
 
-## Getting Started
+TiaType Pro is an advanced AI-powered blogging platform built during a 48-hour solo sprint. It's designed to make writing easier, smarter, and faster — with features like voice dictation, grammar fixes, tone detection, and post analytics.
 
-First, run the development server:
+📦 Built using **Next.js 14**, **MongoDB**, **Tailwind CSS**, and **OpenAI API**
+
+---
+
+## 🚀 Quick Overview
+
+- 👤 User signup and profile setup (bio, profile image, etc.)
+- 📝 Create, edit, publish, or save blog posts as drafts
+- ✨ AI Assistant panel: grammar fixer, title suggestions, rephrasing, tone detection
+- 🎤 **Voice-to-Text Dictation** for hands-free blogging!
+- 📊 Analytics Dashboard: total posts, views, breakdown by status
+- 🌙 Dark mode compatible & mobile responsive
+- 💾 Draft autosave and manual save support
+- Word count and extimated reading time needed assuming it takes 1 min to read 200 words
+
+---
+
+## 🎯 Features
+
+### 🧠 AI Assistant
+
+- ✨ Grammar improvement
+- 🔁 Rephrasing
+- 🧑‍⚖️ Tone adjustment (friendly, formal, etc.)
+- 💡 Title suggestions
+- ✍️ Continue Writing (auto-complete)
+- 📝 Summarization
+- 🔑 Keyword Extraction
+- 🎭 Tone Detection
+- 📋 Copy AI outputs
+- 🎤 **Voice Dictation (Web Speech API)**
+
+### 👤 User Profiles
+
+- Takes `name`, `username`, `bio`, `profile picture URL` after signup
+- Edits and saves from profile page
+- Automatically appears in dashboard header
+
+### 📊 Analytics Page
+
+- Total post count
+- Total views (view counter per post)
+- Breakdown of published vs. draft posts
+
+### 📦 Tech Stack
+
+- `Next.js 14` (App Router)
+- `MongoDB + Mongoose`
+- `Tailwind CSS`
+- `OpenAI API`
+- `React Hot Toast`
+- `Web Speech API` for voice
+
+---
+
+## 🛠 Setup & Local Development
+
+### 1. Clone the repo
 
 ```bash
+git clone https://github.com/your-username/tiatype-pro.git
+cd tiatype-pro
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
